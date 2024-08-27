@@ -13,7 +13,7 @@ const ProductSec = () => {
     return (
         <div className='pt-12 mb-3'>
             {/**part1 open */}
-            <div className='flex lg:px-16 px-8 items-center flex-col-reverse   justify-center gap-20'>
+            <div className='flex lg:px-16 px-8 items-center  flex-wrap-reverse  justify-center gap-20'>
                 <div className='space-y-6'>
                     <h2 className='text-3xl font-sans font-semibold'>How to design your site footer like<br /> we did</h2>
                     <p className='line-clamp-5'>
