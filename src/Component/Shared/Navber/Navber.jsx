@@ -22,9 +22,9 @@ const Navber = () => {
     ];
 
     return (
-       <div>
-            <header className="w-full relative top-0 right-0 left-0  bg-white md:bg-transparent ">
-                <nav className="lg:px-14 px-4 py-4 ">
+       <div className='bg-[#f3f0eb]'>
+            <header className="container mx-auto ">
+                <nav className="lg:px-14 px-4 py-6 ">
                     <div className="flex justify-between items-center text-base gap-8">
                         {/**navber logo */}
                         <a href="#" className="text-2xl font-semibold flex items-center space-x-4">
@@ -33,16 +33,16 @@ const Navber = () => {
                         {/**nav link item */}
                         <ul className="md:block hidden space-x-12">
                             {
-                                navItems.map(({ link, path }) => <Link key={path} to={path} spy={true}
+                                navItems.map(({ link, path }) => <Link key={path}  spy={true}
                                     smooth={true}
-                                    offset={-50} activeClass="active" className="text-base hover:text-green-300 first:font-medium" >{link}</Link>)
+                                    offset={-50} activeClass="active" className="text-black text-xl hover:text-green-300 first:font-medium" >{link}</Link>)
                             }
                         </ul>
                         {/**large device */}
                         <div className="lg:flex items-center hidden space-x-10">
-                            <Link to='/login' className="hidden lg:flex items-center text-green-400 hover:text-black]">Login</Link>
+                            <Link to='/login' className="hidden lg:flex items-center text-xl text-green-400 hover:text-black]">Login</Link>
                             <Link to='/signup'>
-                                <button className="bg-[#4CAF4F] text-white rounded py-2 px-4 transition-all duration-300 hover:bg-emerald-600 ">SignUp</button>
+                                <button className="bg-[#4CAF4F] text-white text-xl rounded py-2 px-4 transition-all duration-300 hover:bg-emerald-600 ">SignUp</button>
                             </Link>
                         </div>
                         {/**togglemenu */}
@@ -54,11 +54,11 @@ const Navber = () => {
                             </button>
                         </div>
                         {/**moblie device */}
-                        <div className={`space-y-4 absolute px-4 py-7 mt-16  bg-[#9fe9a2] overflow-visible ${isMenuOpne ? 'block fixed top-0 right-0 left-0' : 'hidden'}`}>
+                        <div className={`space-y-10 px-4 py-7 mt-16 absolute top-0 left-0  bg-[#000000] overflow-visible ${isMenuOpne ? 'block fixed top-0 right-0 left-0' : 'hidden'}`}>
                             {
-                                navItems.map(({ link, path }) => <Link key={path} to={path} spy={true}
+                                navItems.map(({ link, path }) => <Link key={path}  spy={true}
                                     smooth={true}
-                                    offset={-50} activeClass="active" className="flex items-center justify-center text-base hover:text-white first:font-medium" >{link}</Link>)
+                                    offset={-50} activeClass="active" className="flex items-center hover:text-green-300  justify-center  text-white  first:font-medium" >{link}</Link>)
                             }
                             <Link className="flex justify-center items-center" to='/signup'>
                                 <button className="bg-[#4CAF4F] text-white rounded py-2 px-4 transition-all duration-300 hover:bg-emerald-600 ">SignUp</button>

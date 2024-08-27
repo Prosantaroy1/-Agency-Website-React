@@ -13,7 +13,7 @@ const ProductSec = () => {
     return (
         <div className='pt-12 mb-3'>
             {/**part1 open */}
-            <div className='flex lg:px-16 px-1 items-center  justify-center gap-20'>
+            <div className='flex lg:px-16 px-8 items-center flex-col-reverse   justify-center gap-20'>
                 <div className='space-y-6'>
                     <h2 className='text-3xl font-sans font-semibold'>How to design your site footer like<br /> we did</h2>
                     <p className='line-clamp-5'>
@@ -30,7 +30,7 @@ const ProductSec = () => {
             </div>
             {/**part2 open  */}
             <div className='pt-14 py-8 bg-[#F5F7FA] mt-8'>
-                <div className='flex items-center justify-center gap-14 px-16'>
+                <div className='flex items-center flex-wrap justify-center gap-14 px-16'>
                     <img src={Img2} alt="" />
                     <div className='space-y-4'>
                         <p className='font-sans'>
@@ -45,7 +45,7 @@ const ProductSec = () => {
                         </p>
                         <h3 className='font-bold text-xl text-[#61ff42]'>Prosanta Roy</h3>
                         <p>British Dragon Boat Racing Association</p>
-                        <div className='flex items-center gap-8 pt-3'>
+                        <div className='flex items-center overflow-x-auto gap-8 pt-3'>
                             <img src={icon1} alt="" />
                             <img src={icon2} alt="" />
                             <img src={icon3} alt="" />

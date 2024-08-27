@@ -7,7 +7,7 @@ import Testimonial from "../Testimonial Section/Testimonial";
 const Home = () => {
     return (
         <div>
-            <Banner/>
+            {/* <Banner/> */}
             <ClientSec/>
             <Aboutsec/>
             <ProductSec/>

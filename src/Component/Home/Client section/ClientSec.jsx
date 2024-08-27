@@ -12,11 +12,11 @@ import icon3 from '../../../assets/img/about3.png'
 
 const ClientSec = () => {
     return (
-        <div className='pt-12 px-14'>
+        <div className='pt-12 px-14 container mx-auto'>
             <h3 className='text-center font-sans font-bold text-4xl text-black'>Our Clients</h3>
             <p className='text-center pt-2'>We have been working with some Fortune 500+ clients</p>
             {/**company logo clients */}
-            <div className='flex justify-between pt-10 items-center gap-6 lg:px-16 px-1'>
+            <div className='flex overflow-x-auto justify-between pt-10 items-center gap-6 lg:px-16 px-1'>
                 <img src={img1} alt="" />
                 <img src={img2} alt="" />
                 <img src={img4} alt="" />
@@ -32,7 +32,7 @@ const ClientSec = () => {
                     Who is Nextcent suitable for?
                 </p>
                 {/**card */}
-                <div className='flex justify-between lg:px-16 px-1  items-center pt-14'>
+                <div className='flex justify-between flex-wrap gap-y-12 lg:px-16 px-1  items-center pt-14'>
                     <div className='flex justify-center items-center space-y-4 flex-col'>
                         <img src={icon1} alt="" />
                         <h3>Membership Organisations</h3>
